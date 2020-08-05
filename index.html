@@ -6,28 +6,61 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
     <title>VCET-Grade calculator</title>
-    <style></style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <div class="heading"><h1>VCET grade calculatot</h1></div>
-      <div class="row">
-        <div class="col-6"><input type="text" class="form-control" /></div>
-        <div class="col-3">
-          <select class="form-control">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-          </select>
+      <div class="dep_and_sem">
+        <div class="row">
+          <div class="col-6">
+            <label for="sem">Department</label>
+            <select class="form-control" id="dep">
+              <option>CSE</option>
+              <option>ECE</option>
+              <option>IT</option>
+              <option>MEC</option>
+            </select>
+          </div>
+          <div class="col-6">
+            <label for="sem">Semester</label>
+            <select class="form-control" id="sem">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
         </div>
-        <div class="col-3">
-          <select class="form-control">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-          </select>
+      </div>
+      <div class="calculator">
+        <div class="row">
+          <div class="col-6">subject</div>
+          <div class="col-3">credit</div>
+          <div class="col-3">grade</div>
+          <!-- <div class="col-1"> </div> -->
+        </div>
+        <div class="row">
+          <div class="col col-6">
+            <input type="text" class="form-control" />
+          </div>
+          <div class="col col-2.5">
+            <select class="form-control">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+          <div class="col col-2.5">
+            <select class="form-control">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+          <div class="col col-1"><button type="button" class="btn btn-danger">X</button></div>
         </div>
       </div>
     </div>

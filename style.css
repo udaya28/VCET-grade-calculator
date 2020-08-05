@@ -1,6 +1,14 @@
 body{
-    background-color:  rgb(10, 82, 155);
+    background-color: rgb(103, 182, 231);
 }
-div{
-    background-color: aquamarine;
+
+.col{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.dep_and_sem{
+    margin: 20px 0px 20px 0px;
+}
+.row{
+    margin: 10px 0px 10px 0px;
 }
