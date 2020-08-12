@@ -12,11 +12,11 @@ function getData(regulation, department, semester, callback) {
 }
 function putHTML(data) {
   let html = `
-  <div class="calculator container">
+  <div class=" container calculator">
   <div class="row">
-    <div class="col-6">subject</div>
-    <div class="col-3">credit</div>
-    <div class="col-3">grade</div>
+    <div class="col-6 head">subject</div>
+    <div class="col-3 head">credit</div>
+    <div class="col-3 head">grade</div>
   </div>`;
   for (let i = 0; i < data.subject.length; i++) {
     html += `
