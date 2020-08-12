@@ -43,7 +43,7 @@ function putHTML(data) {
   </div>`;
   }
   html +=
-    '<button type="button" class="btn btn-secondary btn-sm btn-block " id="calculate-sgpa">Calculate SGPA</button><div>';
+    '<button type="button" class="btn btn-secondary btn-sm btn-block " id="calculate-sgpa">Calculate SGPA</button><div><div id="result"></div>';
   const box = document.getElementById('box');
   box.innerHTML = html;
   document
