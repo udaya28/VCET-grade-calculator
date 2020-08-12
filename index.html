@@ -16,15 +16,19 @@
        <h5>Velalar college of engineering and technology</h5> </div>
       <div class="dep_and_sem">
         <div class="row">
+          <div class="col-7">
+            <label for="regulation" >Regulation</label>
+          </div>
           <div class="col-5">
-            <label for="regulation" >regulation</label>
             <select class="form-control" id="regulation" value="">
               <option value="R-2018">R-2018</option>
               <!-- <option value="R-2016">R-2016</option> -->
             </select>
           </div>
-          <div class="col-4">
-            <label for="department" >Department</label>
+         </div>
+        <div class="row">
+          <div class="col-7"><label for="department" >Department</label></div>
+          <div class="col-5">
             <select class="form-control" id="department" value="">
               <option value="CSE">CSE</option>
               <!-- <option>ECE</option>
@@ -32,8 +36,11 @@
               <option>MEC</option> -->
             </select>
           </div>
-          <div class="col-3">
-            <label for="semester">Semester</label>
+        </div>
+        <div class="row">
+          <div class="col-7"><label for="semester">Semester</label></div>
+          <div class="col-5">
+            
             <select class="form-control" id="semester">
               <option value="1">1</option>
               <option value="2">2</option>
@@ -46,6 +53,8 @@
 
             </select>
           </div>
+        </div>
+          
         </div>
         <button type="button" class="btn btn-secondary btn-sm btn-block" id="calculate">Calculate</button>
       </div>
