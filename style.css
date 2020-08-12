@@ -85,4 +85,5 @@ select {
   -moz-appearance: none;
   text-indent: 1px;
   text-overflow: '';
+  text-align: center;
 }
