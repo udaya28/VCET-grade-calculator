@@ -14,22 +14,22 @@ function putHTML(data) {
   let html = `
   <div class=" container calculator">
   <div class="row">
-    <div class="col-6 head">subject</div>
-    <div class="col-3 head">credit</div>
+    <div class="col-7 head">subject</div>
+    <div class="col-2 head">credit</div>
     <div class="col-3 head">grade</div>
   </div>`;
   for (let i = 0; i < data.subject.length; i++) {
     html += `
   <div class="row">
-    <div class="col col-6">
+    <div class="col col-7">
       <input type="text" class="form-control" value="${data.subject[i].subject}" disabled/>
     </div>
-    <div class="col col-3">
+    <div class="col col-2 col-x">
       <select class="form-control" value="${data.subject[i].credit}" disabled>
         <option value="${data.subject[i].credit}">${data.subject[i].credit}</option>
       </select>
     </div>
-    <div class="col col-3">
+    <div class="col col-3 col-x">
       <select class="form-control" id="grade">
         <option value = 10 >O</option>
         <option value = 9 >A+</option>
