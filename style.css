@@ -27,7 +27,7 @@ margin-top: 10px;
 }
 
 label,
-select ,input[type="text"],.form-control{
+select ,input[type="text"],.form-control,.alert{
     border: 1px solid #ced4da;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
@@ -38,7 +38,9 @@ select ,input[type="text"],.form-control{
   padding-left: 0.75rem;
   height: calc(1.5em + 0.75rem + 2px);
   font-family: 'Patua One', cursive;
+  color: black;
 }
+
 #calculte{
     border: 1px solid #ced4da;
     border-radius: 10px;
