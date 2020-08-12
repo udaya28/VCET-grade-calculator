@@ -17,6 +17,45 @@
           },
           { "subject": "Value Education for Youth Empowerment", "credit": 0 }
         ]
+      },
+      "2": {
+        "total-credit": 19,
+        "subject": [
+          { "subject": "Communicative English - II", "credit": 3 },
+          { "subject": "Engineering Mathematics - II", "credit": 4 },
+          { "subject": "Physics for Information Sciences", "credit": 3 },
+          { "subject": "Basic of Electrical and Electronics Engineering", "credit": 3 },
+          { "subject": "Programming in C", "credit": 3 },
+          { "subject": "Physics and Chemistry Laboratory - II", "credit": 1 },
+          {
+            "subject": "C Programming Laboratory ",
+            "credit": 1
+          },
+          {
+            "subject": "Engineering Practices Laboratory ",
+            "credit": 1
+          },
+          { "subject": "Environmental Science and Engineering", "credit": 0 }
+        ]
+      },
+      "3": {
+        "total-credit": 19,
+        "subject": [
+          { "subject": "Discrete Mathematics", "credit": 4 },
+          { "subject": "Object Oriented Programming using Java", "credit": 3 },
+          { "subject": "Data structures", "credit": 3 },
+          { "subject": "Digital Principles and System Design", "credit": 4 },
+          { "subject": "Computer Architecture", "credit": 3 },
+          { "subject": "Object Oriented Programming Laboratory", "credit": 1 },
+          {
+            "subject": "Data structures Laboratory ",
+            "credit": 1
+          },
+          {
+            "subject": "Essential English For Professionals",
+            "credit": 0
+          }
+        ]
       }
     }
   },
