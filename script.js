@@ -47,7 +47,7 @@ function getHTML(data) {
     </div>
   </div>`;
   }
-  html += '<div>';
+  html += '<button type="button" class="btn btn-secondary btn-sm btn-block calculate-sgpa" id="calculate">Calculate SGPA</button><div>';
   const box = document.getElementById('box');
   box.innerHTML = html;
 }
