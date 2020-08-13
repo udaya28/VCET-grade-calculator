@@ -102,12 +102,16 @@ select {
   text-overflow: '';
   text-align-last: center;
 }
-.btn-secondary:hover,.btn-secondary:active
-{
-  background-color: rgb(21, 36, 121);
-}
+
+.btn:visited { background-color:var(--button-color); }
+.btn:focus { background-color: rgb(21, 36, 121); }
+.btn:hover {background-color: rgb(21, 36, 121); }
+.btn:active { background-color: rgb(21, 36, 121); }
 
 
 .form-control:disabled{
   background-color: rgb(255, 255, 255);
+}
+.btn{
+ transition: none;
 }
