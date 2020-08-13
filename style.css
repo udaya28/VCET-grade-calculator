@@ -82,9 +82,12 @@ margin-top: 10px;
     font-family: 'Patua One', cursive;
 }
 .head,h3,h5{
-  font-weight: bold;
   letter-spacing: 1px;
 }
+.head{
+  font-weight: bold;
+}
+
 .btn-secondary
 {
   background-color:var(--button-color);
