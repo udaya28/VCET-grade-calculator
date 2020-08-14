@@ -24,7 +24,10 @@
           { "subject": "Communicative English - II", "credit": 3 },
           { "subject": "Engineering Mathematics - II", "credit": 4 },
           { "subject": "Physics for Information Sciences", "credit": 3 },
-          { "subject": "Basic of Electrical and Electronics Engineering", "credit": 3 },
+          {
+            "subject": "Basic of Electrical and Electronics Engineering",
+            "credit": 3
+          },
           { "subject": "Programming in C", "credit": 3 },
           { "subject": "Physics and Chemistry Laboratory - II", "credit": 1 },
           {
@@ -162,7 +165,6 @@
           { "subject": "Professional Elective - V", "credit": 3 },
           { "subject": "Professional Elective - VI", "credit": 3 },
           { "subject": "Project Work", "credit": 10 }
-          
         ]
       }
     }
