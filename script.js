@@ -43,7 +43,7 @@ function putHTML(data) {
   </div>`;
   }
   html +=
-    '<button type="button" class="btn btn-secondary btn-sm btn-block" id="calculate-sgpa">Calculate SGPA</button><div><div id="result"></div>';
+    '<button type="button" class="btn btn-secondary btn-sm btn-block all-button" id="calculate-sgpa">Calculate SGPA</button><div><div id="result"></div>';
   const box = document.getElementById('box');
   box.innerHTML = html;
   document
@@ -56,12 +56,12 @@ function putHTML(data) {
         credit_arr.push(subject.credit);
       });
       console.log(credit_arr);
-      const userInput = document.querySelectorAll("#grade");
-      userInput.forEach( x => {
+      const userInput = document.querySelectorAll('#grade');
+      userInput.forEach((x) => {
         grade_arr.push(Number(x.value));
       });
       console.log(grade_arr);
-      SGPA = getResult(credit_arr,grade_arr,data["total-credit"]);
+      SGPA = getResult(credit_arr, grade_arr, data['total-credit']);
 
       const result = document.getElementById('result');
       result.innerHTML = `<div class="alert alert-success" role="alert" id="result">
@@ -75,20 +75,19 @@ function roundToTwo(num) {
   return +(Math.round(num + 'e+2') + 'e-2');
 }
 
-function getResult(credit, grade,totalCredit) {
+function getResult(credit, grade, totalCredit) {
   var result = 0.0,
     points = 0;
   for (let i = 0; i < credit.length; i++) {
     points += credit[i] * grade[i];
   }
-  
+
   result = roundToTwo(points / totalCredit);
   if (isNaN(result)) {
     result = 0;
   }
   return result;
 }
-
 
 document.getElementById('calculate').addEventListener('click', function () {
   let regulation = document.getElementById('regulation').value;
