@@ -107,8 +107,10 @@ document.getElementById('calculate-cgpa').addEventListener('click', () => {
 
 function renderSemesters(sem) {
   let html = `
-  <div class="heading shadow p-3 mb-4 bg-white rounded">
-  <p>Enter Corresponding SGPA of Each Semesters</p>`;
+  <div class="row">
+    <div class="col-8 head">Semester</div>
+    <div class="col-4 head">SGPA</div>
+  </div>`;
   for (let i = 1; i <= sem; i++) {
     html += `<div class="row">
   <div class="col-8"><label>Semester ${i}</label></div>

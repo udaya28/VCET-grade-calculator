@@ -158,12 +158,12 @@ input[type='number'] {
   display: inline-table;
   width: 100%;
 } */
-.completed_sem label,
+#completed-semester label,
 .completed_sem select {
   border: none;
   margin-bottom: 0px;
 }
-.completed_sem p,
+#p-tag,
 .completed_sem select {
   border: 1px solid #ced4da;
   background-color: rgb(255, 255, 255);
