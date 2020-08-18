@@ -1,18 +1,20 @@
 :root {
   --main-bg-color: rgb(243, 243, 243);
   --sec-bg-color: rgb(255, 255, 255);
-  --button-color:rgb(0, 11, 80);
-  
+  --button-color: rgb(0, 11, 80);
 }
 body {
-  background-color:var(--main-bg-color);
+  background-color: var(--main-bg-color);
   text-align: center;
   color: rgb(0, 11, 80);
-  
 }
 
 .col-7,
-.col-5,.col-3,.col-6,.col-2,.col-8 {
+.col-5,
+.col-3,
+.col-6,
+.col-2,
+.col-8 {
   padding-left: 3px;
   padding-right: 3px;
 }
@@ -25,18 +27,21 @@ body {
 .heading {
   text-align: center;
   font-family: 'Patua One', cursive;
-  background-color:var(--sec-bg-color);
+  background-color: var(--sec-bg-color);
   padding: 5px;
   border-radius: 10px;
-margin-top: 10px;
+  margin-top: 10px;
 }
 .calculator {
   margin: 30px 0px;
 }
 
 label,
-select ,input[type="text"],.form-control,.alert{
-    border: 1px solid #ced4da;
+select,
+input[type='text'],
+.form-control,
+.alert {
+  border: 1px solid #ced4da;
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   width: 100%;
@@ -49,9 +54,10 @@ select ,input[type="text"],.form-control,.alert{
   color: black;
 }
 
-#calculate,#calculate-sgpa{
-    border: 1px solid #ced4da;
-    border-radius: 10px;
+#calculate,
+#calculate-sgpa {
+  border: 1px solid #ced4da;
+  border-radius: 10px;
   width: 100%;
   padding-top: 0.375rem;
   padding-right: 0.75rem;
@@ -60,39 +66,39 @@ select ,input[type="text"],.form-control,.alert{
   height: calc(1.5em + 0.75rem + 2px);
 }
 
-
-
 .container {
   padding-right: 10px;
   padding-left: 10px;
 }
 
-.dep_and_sem{
-    background-color:var(--sec-bg-color);
-    padding: 10px;
-    border-radius: 10px;
+.dep_and_sem {
+  background-color: var(--sec-bg-color);
+  padding: 10px;
+  border-radius: 10px;
 }
-.calculator{
-background-color:var(--sec-bg-color);
-padding: 10px;
-margin-top: 10px;
-    border-radius: 10px;
+.calculator {
+  background-color: var(--sec-bg-color);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
 }
-.head,button{
-    font-family: 'Patua One', cursive;
+.head,
+button {
+  font-family: 'Patua One', cursive;
 }
-.head,h3,h5{
+.head,
+h3,
+h5 {
   letter-spacing: 1px;
 }
-.head{
+.head {
   font-weight: bold;
 }
 
-.btn-secondary
-{
-  background-color:var(--button-color);
+.btn-secondary {
+  background-color: var(--button-color);
 }
-#result{
+#result {
   margin-top: 15px;
 }
 select {
@@ -103,15 +109,28 @@ select {
   text-align-last: center;
 }
 
-.btn:visited { background-color:var(--button-color); }
-.btn:focus { background-color: rgb(21, 36, 121); }
-.btn:hover {background-color: rgb(21, 36, 121); }
-.btn:active { background-color: rgb(21, 36, 121); }
+.all-button:visited {
+  background-color: var(--button-color);
+}
+.all-button:focus {
+  background-color: rgb(21, 36, 121);
+}
+.all-button:hover {
+  background-color: rgb(21, 36, 121);
+}
+.all-button:active {
+  background-color: rgb(21, 36, 121);
+}
 
-
-.form-control:disabled{
+.form-control:disabled {
   background-color: rgb(255, 255, 255);
 }
-.btn{
- transition: none;
+.btn {
+  transition: none;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+  background-color: rgb(21, 36, 121);
 }
