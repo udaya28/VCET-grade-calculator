@@ -12,7 +12,7 @@ function getData(regulation, department, semester, callback) {
 }
 function putHTML(data) {
   let html = `
-  <div class=" container ">
+  <div class="">
   <div class="row">
     <div class="col-8 head">Subject</div>
     <div class="col-2 head">Credit</div>
