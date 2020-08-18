@@ -39,6 +39,7 @@ body {
 label,
 select,
 input[type='text'],
+input[type='number'],
 .form-control,
 .alert {
   border: 1px solid #ced4da;
@@ -107,6 +108,16 @@ select {
   text-indent: 1px;
   text-overflow: '';
   text-align-last: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 .all-button:visited {

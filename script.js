@@ -55,12 +55,12 @@ function putHTML(data) {
       data.subject.forEach((subject) => {
         credit_arr.push(subject.credit);
       });
-      console.log(credit_arr);
+      // console.log(credit_arr);
       const userInput = document.querySelectorAll('#grade');
       userInput.forEach((x) => {
         grade_arr.push(Number(x.value));
       });
-      console.log(grade_arr);
+      // console.log(grade_arr);
       SGPA = getResult(credit_arr, grade_arr, data['total-credit']);
 
       const result = document.getElementById('result');
@@ -89,10 +89,20 @@ function getResult(credit, grade, totalCredit) {
   return result;
 }
 
+//section 1
 document.getElementById('calculate').addEventListener('click', function () {
   let regulation = document.getElementById('regulation').value;
   let department = document.getElementById('department').value;
   let semester = document.getElementById('semester').value;
-  console.log(regulation, department, semester);
+  // console.log(regulation, department, semester);
   var data = getData(regulation, department, semester, putHTML);
 });
+
+//section 2
+document.getElementById('calculate-cgpa').addEventListener('click', () => {
+  let totalSemesters = document.getElementById('completed-semester').value;
+  console.log(totalSemesters);
+  renderSemesters(totalSemesters);
+});
+
+function renderSemesters(sem) {}
