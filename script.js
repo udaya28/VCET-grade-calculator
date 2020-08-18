@@ -103,6 +103,9 @@ document.getElementById('calculate-cgpa').addEventListener('click', () => {
   let totalSemesters = document.getElementById('completed-semester').value;
   console.log(totalSemesters);
   renderSemesters(totalSemesters);
+  document.getElementById('calculate-cgpa1').addEventListener('click', () => {
+    getCGPA(totalSemesters);
+  });
 });
 
 function renderSemesters(sem) {
@@ -115,7 +118,7 @@ function renderSemesters(sem) {
     html += `<div class="row">
   <div class="col-8"><label>Semester ${i}</label></div>
   <div class="col-4">
-    <input class="form-control sem-sgpa" type="number" value="" />
+    <input class="form-control sem-sgpa" type="text" value="0.0" inputmode="decimal" />
   </div>
 </div>`;
   }
@@ -123,4 +126,9 @@ function renderSemesters(sem) {
     '<button type="button" class="btn btn-secondary btn-sm btn-block all-button" id="calculate-cgpa1">Calculate CGPA</button><div><div id="result2"></div>';
   html += `</div>`;
   document.getElementById('box1').innerHTML = html;
+}
+
+function getCGPA(totalSemesters) {
+  let SGPA = document.querySelectorAll('.sem-sgpa');
+  console.log(SGPA);
 }
