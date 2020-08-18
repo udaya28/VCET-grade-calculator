@@ -113,13 +113,13 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-  text-align-last: center;
 }
 
 /* Firefox */
 input[type='number'] {
   -moz-appearance: textfield;
   text-align-last: center;
+  text-align: center;
 }
 
 .all-button:visited {
