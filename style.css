@@ -118,10 +118,11 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type='number'] {
+input[type='text'] {
   -moz-appearance: textfield;
   text-align-last: center;
   text-align: center;
+  text-align: right;
 }
 
 .all-button:visited {
