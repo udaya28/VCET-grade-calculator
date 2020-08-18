@@ -120,7 +120,7 @@ function renderSemesters(sem) {
 </div>`;
   }
   html +=
-    '<button type="button" class="btn btn-secondary btn-sm btn-block all-button" id="calculate-cgpa">Calculate CGPA</button><div><div id="result2"></div>';
+    '<button type="button" class="btn btn-secondary btn-sm btn-block all-button" id="calculate-cgpa1">Calculate CGPA</button><div><div id="result2"></div>';
   html += `</div>`;
   document.getElementById('box1').innerHTML = html;
 }

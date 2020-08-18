@@ -56,7 +56,9 @@ input[type='number'],
 }
 
 #calculate,
-#calculate-sgpa {
+#calculate-sgpa,
+#calculate-cgpa,
+#calculate-cgpa1 {
   border: 1px solid #ced4da;
   border-radius: 10px;
   width: 100%;
