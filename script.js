@@ -118,7 +118,7 @@ function renderSemesters(sem) {
     html += `<div class="row">
   <div class="col-8"><label>Semester ${i}</label></div>
   <div class="col-4">
-    <input class="form-control sem-sgpa" type="text" value="0.0" inputmode="decimal" />
+    <input class="form-control sem-sgpa" type="text" value="" inputmode="decimal" placeholder="00.00" />
   </div>
 </div>`;
   }
