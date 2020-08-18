@@ -105,4 +105,20 @@ document.getElementById('calculate-cgpa').addEventListener('click', () => {
   renderSemesters(totalSemesters);
 });
 
-function renderSemesters(sem) {}
+function renderSemesters(sem) {
+  let html = `
+  <div class="heading shadow p-3 mb-4 bg-white rounded">
+  <p>Enter Corresponding SGPA of Each Semesters</p>`;
+  for (let i = 1; i <= sem; i++) {
+    html += `<div class="row">
+  <div class="col-8"><label>Semester ${i}</label></div>
+  <div class="col-4">
+    <input class="form-control sem-sgpa" type="number" value="" />
+  </div>
+</div>`;
+  }
+  html +=
+    '<button type="button" class="btn btn-secondary btn-sm btn-block all-button" id="calculate-cgpa">Calculate CGPA</button><div><div id="result2"></div>';
+  html += `</div>`;
+  document.getElementById('box1').innerHTML = html;
+}
