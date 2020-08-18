@@ -123,12 +123,53 @@ function renderSemesters(sem) {
 </div>`;
   }
   html +=
-    '<button type="button" class="btn btn-secondary btn-sm btn-block all-button" id="calculate-cgpa1">Calculate CGPA</button><div><div id="result2"></div>';
+    '<div id="alert-own"></div><button type="button" class="btn btn-secondary btn-sm btn-block all-button" id="calculate-cgpa1">Calculate CGPA</button><div><div id="result2"></div>';
   html += `</div>`;
   document.getElementById('box1').innerHTML = html;
 }
 
 function getCGPA(totalSemesters) {
   let SGPA = document.querySelectorAll('.sem-sgpa');
-  console.log(SGPA);
+  // console.log(SGPA);
+  const arrSGPA = [];
+  let flag = true;
+  for (let i = 0; i < totalSemesters; i++) {
+    let val = SGPA[i].value;
+    if (val == '') {
+      showAlertInvalid('Every field must to be filled');
+      flag = false;
+      break;
+    } else {
+      if (val < 0.0 || val > 10.0) {
+        showAlertInvalid('SGPA must between 0.0 to 10.0');
+        break;
+        flag = false;
+      } else {
+        arrSGPA.push(Number(val));
+      }
+    }
+  }
+  if (flag) {
+    let totalSGPA = 0;
+    arrSGPA.forEach((x) => {
+      totalSGPA += x;
+    });
+    let CGPA = roundToTwo(totalSGPA / totalSemesters);
+
+    const result = document.getElementById('result2');
+    result.innerHTML = `<div class="alert alert-success" role="alert" id="result">
+    Cumulative Grade Point Average (CGPA) is
+      <span class="alert-link">${CGPA}</span>
+    </div>`;
+  }
+}
+
+function showAlertInvalid(str) {
+  let html = `<div class="alert alert-danger">
+  <strong>${str}</strong>
+</div>`;
+  document.getElementById('alert-own').innerHTML = html;
+  setTimeout(() => {
+    document.getElementById('alert-own').innerHTML = '';
+  }, 4000);
 }
