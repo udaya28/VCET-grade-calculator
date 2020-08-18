@@ -134,3 +134,9 @@ select {
 .show > .btn-secondary.dropdown-toggle {
   background-color: rgb(21, 36, 121);
 }
+
+.sub-heading,
+.sub-heading h5 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
