@@ -39,8 +39,8 @@ body {
 label,
 select,
 input[type='text'],
-.form-control,
-.alert {
+input[type='number'],
+.form-control {
   border: 1px solid #ced4da;
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
@@ -55,7 +55,9 @@ input[type='text'],
 }
 
 #calculate,
-#calculate-sgpa {
+#calculate-sgpa,
+#calculate-cgpa,
+#calculate-cgpa1 {
   border: 1px solid #ced4da;
   border-radius: 10px;
   width: 100%;
@@ -108,6 +110,19 @@ select {
   text-overflow: '';
   text-align-last: center;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='text'] {
+  -moz-appearance: textfield;
+  text-align-last: center;
+  text-align: center;
+  /* text-align: right; */
+}
 
 .all-button:visited {
   background-color: var(--button-color);
@@ -133,4 +148,37 @@ select {
 .btn-secondary:not(:disabled):not(.disabled):active,
 .show > .btn-secondary.dropdown-toggle {
   background-color: rgb(21, 36, 121);
+}
+
+.sub-heading,
+.sub-heading h5 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* label {
+  display: inline-table;
+  width: 100%;
+} */
+#completed-semester label,
+.completed_sem select {
+  border: none;
+  margin-bottom: 0px;
+}
+#p-tag,
+.completed_sem select {
+  border: 1px solid #ced4da;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 100%;
+  height: 80%;
+  padding-top: 6px;
+  padding-right: 12px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  /* height: calc(1.5em + 0.75rem + 2px); */
+  font-family: 'Patua One', cursive;
+  color: black;
+  /* margin-right: 15px;
+  margin-left: 15px; */
 }

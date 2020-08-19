@@ -22,6 +22,8 @@
         <h5>Velalar College of Engineering and Technology</h5>
       </div>
       <div class="dep_and_sem shadow p-3 mb-4 bg-white rounded">
+        <div class="heading sub-heading"><h5>SGPA Calculator</h5></div>
+
         <div class="row">
           <div class="col-8">
             <label for="regulation">Regulation</label>
@@ -66,11 +68,47 @@
         >
           Calculate
         </button>
+        <div id="box"></div>
       </div>
-      <div id="box"></div>
-      <!-- <div id="result"></div> -->
-    </div>
 
+      <!-- <div id="result"></div> -->
+      <div class="completed_sem shadow p-3 mb-4 bg-white rounded">
+        <div class="heading sub-heading"><h5>CGPA Calculator</h5></div>
+        <div class="row">
+          <div class="col-8">
+            <!-- <label for="completed-semester"> -->
+            <p id="p-tag">Enter Number of Completed Semesters</p>
+            <!-- </label> -->
+          </div>
+          <div class="col-4">
+            <select
+              class="form-control"
+              id="completed-semester"
+              style="width: 100%; height: 80%;"
+              class="form-control"
+            >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="btn btn-secondary btn-sm btn-block all-button"
+          id="calculate-cgpa"
+        >
+          Calculate
+        </button>
+
+        <div id="box1"></div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
