@@ -49,6 +49,7 @@ function putHTML(data) {
     '<button type="button" class="btn btn-secondary btn-sm btn-block all-button" id="calculate-sgpa">Calculate SGPA</button><div><div id="result"></div>';
   const box = document.getElementById('box');
   box.innerHTML = html;
+  window.scrollTo(0, document.body.scrollHeight / 5);
   document
     .getElementById('calculate-sgpa')
     .addEventListener('click', function () {
@@ -105,6 +106,7 @@ document.getElementById('calculate').addEventListener('click', function () {
 document.getElementById('calculate-cgpa').addEventListener('click', () => {
   let totalSemesters = document.getElementById('completed-semester').value;
   renderSemesters(totalSemesters);
+  window.scrollTo(0, document.body.scrollHeight);
   document.getElementById('calculate-cgpa1').addEventListener('click', () => {
     getCGPA(totalSemesters);
   });
@@ -171,6 +173,7 @@ function showAlertInvalid(str) {
   <strong>${str}</strong>
 </div>`;
   document.getElementById('alert-own').innerHTML = html;
+  window.scrollTo(0, document.body.scrollHeight);
   setTimeout(() => {
     document.getElementById('alert-own').innerHTML = '';
   }, 4000);
