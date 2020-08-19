@@ -72,6 +72,9 @@ function putHTML(data) {
       Semester Grade Point Average (SGPA) is
       <span class="alert-link">${SGPA}</span>
     </div>`;
+      // console.log(semester.value);
+      localStorage.setItem(semester.value, SGPA);
+      localStore();
     });
 }
 
@@ -107,10 +110,20 @@ document.getElementById('calculate-cgpa').addEventListener('click', () => {
   let totalSemesters = document.getElementById('completed-semester').value;
   renderSemesters(totalSemesters);
   window.scrollTo(0, document.body.scrollHeight);
+  localStore();
   document.getElementById('calculate-cgpa1').addEventListener('click', () => {
     getCGPA(totalSemesters);
   });
 });
+
+function localStore() {
+  const sgpaBox = document.querySelectorAll('.sem-sgpa');
+  // console.log(sgpaBox);
+  for (let i = 0; i < sgpaBox.length; i++) {
+    // console.log(localStorage.getItem(i + 1));
+    sgpaBox[i].value = localStorage.getItem(i + 1);
+  }
+}
 
 function renderSemesters(sem) {
   let html = `
