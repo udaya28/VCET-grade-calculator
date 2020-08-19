@@ -121,7 +121,7 @@ input[type='text'] {
   -moz-appearance: textfield;
   text-align-last: center;
   text-align: center;
-  text-align: right;
+  /* text-align: right; */
 }
 
 .all-button:visited {
