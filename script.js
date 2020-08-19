@@ -142,8 +142,8 @@ function getCGPA(totalSemesters) {
     } else {
       if (val < 0.0 || val > 10.0) {
         showAlertInvalid('SGPA must between 0.0 to 10.0');
-        break;
         flag = false;
+        break;
       } else {
         arrSGPA.push(Number(val));
       }
