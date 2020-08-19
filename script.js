@@ -68,7 +68,7 @@ function putHTML(data) {
       SGPA = getResult(credit_arr, grade_arr, data['total-credit']);
 
       const result = document.getElementById('result');
-      result.innerHTML = `<div class="alert alert-success" role="alert" id="result">
+      result.innerHTML = `<div class="alert alert-primary" role="alert" id="result">
       Semester Grade Point Average (SGPA) is
       <span class="alert-link">${SGPA}</span>
     </div>`;
@@ -161,10 +161,11 @@ function getCGPA(totalSemesters) {
     let CGPA = roundToTwo(totalSGPA / totalSemesters);
 
     const result = document.getElementById('result2');
-    result.innerHTML = `<div class="alert alert-success" role="alert" id="result">
+    result.innerHTML = `<div class="alert alert-primary" role="alert" id="result">
     Cumulative Grade Point Average (CGPA) is
       <span class="alert-link">${CGPA}</span>
     </div>`;
+    window.scrollTo(0, document.body.scrollHeight);
   }
 }
 
