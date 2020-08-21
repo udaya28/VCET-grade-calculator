@@ -59,12 +59,10 @@ function putHTML(data) {
       data.subject.forEach((subject) => {
         credit_arr.push(subject.credit);
       });
-      // console.log(credit_arr);
       const userInput = document.querySelectorAll('#grade');
       userInput.forEach((x) => {
         grade_arr.push(Number(x.value));
       });
-      // console.log(grade_arr);
       SGPA = getResult(credit_arr, grade_arr, data['total-credit']);
 
       const result = document.getElementById('result');
@@ -72,7 +70,6 @@ function putHTML(data) {
       Semester Grade Point Average (SGPA) is
       <span class="alert-link">${SGPA}</span>
     </div>`;
-      // console.log(semester.value);
       localStorage.setItem(semester.value, SGPA);
       localStore();
     });
@@ -118,9 +115,7 @@ document.getElementById('calculate-cgpa').addEventListener('click', () => {
 
 function localStore() {
   const sgpaBox = document.querySelectorAll('.sem-sgpa');
-  // console.log(sgpaBox);
   for (let i = 0; i < sgpaBox.length; i++) {
-    // console.log(localStorage.getItem(i + 1));
     sgpaBox[i].value = localStorage.getItem(i + 1);
   }
 }
@@ -147,7 +142,6 @@ function renderSemesters(sem) {
 
 function getCGPA(totalSemesters) {
   let SGPA = document.querySelectorAll('.sem-sgpa');
-  // console.log(SGPA);
   const arrSGPA = [];
   let flag = true;
   for (let i = 0; i < totalSemesters; i++) {
