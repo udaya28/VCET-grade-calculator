@@ -157,10 +157,6 @@ input[type='text'] {
   margin-bottom: 0px;
 }
 
-/* label {
-  display: inline-table;
-  width: 100%;
-} */
 #completed-semester label,
 .completed_sem select {
   border: none;
@@ -177,11 +173,8 @@ input[type='text'] {
   padding-right: 12px;
   padding-bottom: 6px;
   padding-left: 12px;
-  /* height: calc(1.5em + 0.75rem + 2px); */
   font-family: 'Patua One', cursive;
   color: black;
-  /* margin-right: 15px;
-  margin-left: 15px; */
 }
 
 #github {
