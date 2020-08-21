@@ -1,2 +1,5 @@
-# VCET grade calculator by udaya
-# thanks to all my friends who supported me during developement
+# VCET grade calculator 
+# Suggesions are warm welcomed 
+# You can also contribute to this repo just pull a request
+# Thanks to all my friends who supported me during developement 
+
