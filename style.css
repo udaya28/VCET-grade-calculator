@@ -85,7 +85,8 @@ input[type='number'],
   border-radius: 10px;
 }
 .head,
-button {
+button,
+a {
   font-family: 'Patua One', cursive;
 }
 .head,
@@ -181,4 +182,10 @@ input[type='text'] {
   color: black;
   /* margin-right: 15px;
   margin-left: 15px; */
+}
+
+#github {
+  width: 1rem;
+  height: 1rem;
+  padding-bottom: 1px;
 }
