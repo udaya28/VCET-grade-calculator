@@ -36,9 +36,9 @@ function putHTML(data) {
       <select class="form-control" id="grade">
         <option value = 10 >O</option>
         <option value = 9 >A+</option>
-        <option value = 8 >A</option>
-        <option value = 7 >B</option>
-        <option value = 6 >B+</option>
+        <option value = 8 >A</option> 
+        <option value = 7 >B+</option>
+        <option value = 6 >B</option>
         <option value = 0 >RA</option>
         <option value = 0>AB</option>
       </select>
